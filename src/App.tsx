@@ -13,10 +13,10 @@ function App() {
 
   const TopPage = () => (
     <div>
-      <p>トップページ</p>
-      <p>{auth.isAuthenticated ? 'ログイン済' : '未ログイン'}</p>
+      <p>Top Page</p>
+      <p>You are {auth.isAuthenticated ? 'logged-in' : 'not logged-in'}.</p>
       <p>
-        <Link to="/signin">ログイン</Link>
+        <Link to="/signin">Login</Link>
       </p>
     </div>
   );

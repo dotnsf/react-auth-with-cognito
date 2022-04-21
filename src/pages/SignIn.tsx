@@ -21,7 +21,7 @@ export function SignIn() {
   return (
     <form noValidate onSubmit={executeSignIn}>
       <div>
-        <label htmlFor="username">メールアドレス: </label>
+        <label htmlFor="username">ID(e-mail): </label>
         <input
           id="username"
           type="email"
@@ -30,7 +30,7 @@ export function SignIn() {
         />
       </div>
       <div>
-        <label htmlFor="password">パスワード: </label>
+        <label htmlFor="password">Password: </label>
         <input
           id="password"
           type="password"
@@ -38,7 +38,7 @@ export function SignIn() {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <button type="submit">ログイン</button>
+      <button type="submit">Login</button>
     </form>
   );
 }
